@@ -457,10 +457,15 @@
   color: var(--text-secondary);
   line-height: 1.65;
   flex: 1;
-  display: -webkit-box;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 3;
+  max-height: 4.95em;
+  /* 3 lines × 1.65 line-height */
   overflow: hidden;
+  transition: max-height 0.35s ease;
+}
+
+.VTDVaqtN:hover .LdNnG8te {
+  max-height: 20em;
+  /* generous cap — accommodates any description */
 }
 
 .S89LGXaC {
@@ -2026,13 +2031,13 @@ img {
 
   .rv-main {
     padding: 8.5mm 9.5mm;
-    gap: 6mm;
+    gap: 5.5mm;
     background: #fff !important;
   }
 
   .rv-section-title {
     font-size: 8.5pt;
-    margin-bottom: 3.5mm;
+    margin-bottom: 3mm;
     color: #6366f1 !important;
   }
 
@@ -2042,12 +2047,12 @@ img {
 
   .rv-summary {
     font-size: 10pt;
-    line-height: 1.5;
+    line-height: 1.45;
     color: #3f3f46 !important;
   }
 
   .rv-exp-item {
-    margin-bottom: 4.5mm;
+    margin-bottom: 4mm;
   }
 
   .rv-exp-header {
@@ -2075,7 +2080,7 @@ img {
 
   .rv-bullet-list li {
     font-size: 9.5pt;
-    line-height: 1.45;
+    line-height: 1.4;
     color: #3f3f46 !important;
   }
 
@@ -2085,7 +2090,7 @@ img {
   }
 
   .rv-proj-card {
-    padding: 4.5mm 5.5mm;
+    padding: 4mm 5.5mm;
     background: #f9f9fa !important;
     border-color: #d4d4d8 !important;
   }
